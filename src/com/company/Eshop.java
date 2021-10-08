@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Eshop {
 
+    private String shopName;
+    private ArrayList<Produkt> products = new ArrayList<>();
+    private int money = 0;
+
     public void addToStock(Produkt newProduct) {
         products.add(newProduct);
         System.out.println("--------------------------------------------------------------------------------------------------");
@@ -22,9 +26,9 @@ public class Eshop {
         }
     }
 
-    private String shopName;
-    private ArrayList<Produkt> products = new ArrayList<>();
-    private int money = 0;
+    public Eshop(String shopName) {
+        this.shopName = shopName;
+    }
 
     public int getMoney() {
         return money;
@@ -38,9 +42,6 @@ public class Eshop {
         this.shopName = shopName;
     }
 
-    public Eshop(String shopName) {
-        this.shopName = shopName;
-    }
 
     public ArrayList<Produkt> getProducts() {
         return products;

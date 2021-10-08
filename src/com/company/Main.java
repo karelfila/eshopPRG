@@ -11,6 +11,11 @@ public class Main {
         Produkt iPhoneXR = new Produkt("iPhoneXR", 18000, "Iphone XR je spolehlivý chytrý telefon");
 
         Eshop alza = new Eshop("Alza.cz");
+
+
+        //AKCE
+
+        //add
         alza.addToStock(alzaBox1);
         alza.addToStock(alzaBox2);
         alza.addToStock(alzaBox2);
@@ -20,11 +25,15 @@ public class Main {
         alza.addToStock(iPhoneXR);
         alza.addToStock(iPhoneXR);
 
+        //sell
         alza.sell(alzaBox1);
         alza.sell(alzaBox2);
         alza.sell(alzaBox2);
         alza.sell(iPhoneX);
         alza.sell(iPhoneXR);
+
+        //KONEC AKCÍ
+
         System.out.println("--------------------------------------------------------------------------------------------------");
         System.out.println("Alza: " + alza.getMoney() + "kč");
 
